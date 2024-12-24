@@ -1,11 +1,7 @@
-export PATH="/home/ubuntu/.rbenv/shims:${PATH}"
+export PATH="$HOME/.rbenv/shims:${PATH}"
 export RBENV_SHELL=bash
 
-# cci source '/home/ubuntu/.rbenv/completions/rbenv.bash' error - stuck terminal
-# source '/home/ubuntu/.rbenv/completions/rbenv.bash'
-
-
-command rbenv rehash 2>/dev/null
+command rbenv rehash
 rbenv() {
   local command
   command="${1:-}"
